@@ -3,7 +3,7 @@
 /**
  * main - Program that prints a string using printf
  *
- * Return : 0 (Success)
+ * Return : always 0 (Success)
  *
  *
  */
