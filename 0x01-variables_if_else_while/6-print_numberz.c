@@ -13,9 +13,9 @@ int main(void)
 
 	while (x < 10)
 	{
-		putchar("%d", x)
+		putchar("%i", x);
 			x = x + 1
 
 	}
-	return (0)
+	return (0);
 }
