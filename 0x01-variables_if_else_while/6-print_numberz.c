@@ -13,7 +13,7 @@ int main(void)
 
 	while (x < 10)
 	{
-		pr("%d", x)
+		putchar("%d", x)
 			x = x + 1
 
 	}
