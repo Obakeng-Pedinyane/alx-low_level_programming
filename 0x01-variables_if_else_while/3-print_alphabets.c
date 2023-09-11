@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
 /**
- * main - Iterates through the lowercase alphabet
+ * main - Iterate through lowercase and uppercase 
  *
  * Return: always 0 (Success)
  **/
+
 int main(void)
 {
 	char letter = 'a';
 
-	while (letter <= 'z')
+	while (letter <= 'Z')
 	{
 		putchar(letter);
 		letter++;
