@@ -13,8 +13,8 @@ int main(void)
 
 	while (x < 10)
 	{
-		putchar("%i", x);
-			x = x + 1
+		putchar("%d", x);
+			x = x + 1;
 
 	}
 	return (0);
