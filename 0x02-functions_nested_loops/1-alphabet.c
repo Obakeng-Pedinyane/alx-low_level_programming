@@ -1,5 +1,4 @@
 #include "main.h"
-#include "1-main.c"
 
 /**
  * print_alphabet - Function prints alphabet
@@ -10,12 +9,14 @@
 
 void print_alphabet(void)
 {
-	int x;
+	char letter;
 
-	for (x = 'a'; x <= 'z'; x++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		_putchar('x');
+		_putchar(letter);
 
 	}
 	_putchar('\n');
+
+	return;
 }
