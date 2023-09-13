@@ -14,7 +14,8 @@ int _islower(int c)
 	if (islower(c) == 0)
 	{
 		_putchar('0');
-	} else
+	}
+	else
 	{
 		_putchar('1');
 	}
