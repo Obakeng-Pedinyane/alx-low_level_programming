@@ -1,3 +1,4 @@
+
 #include "main.h"
 #include <stdlib.h>
 
@@ -6,24 +7,16 @@
  *
  * @n: Function argument
  *
- * Return: always the last digit of the argument
+ * Return: always the last digit
  **/
 
 int print_last_digit(int n)
 {
 	int r;
-	int a;
+	int b;
 
-	if (n != -40)
-	{
-		a = abs(n);
-		r = a % 10;
-		_putchar(r + '0');
-		return (r);
-	}
-	else
-	{
-		_putchar(8 + '0');
-		return (8);
-	}
+	b = abs(n);
+	r = b % 10;
+	_putchar('0' + r);
+	return (r);
 }
