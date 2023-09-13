@@ -6,22 +6,20 @@
  *
  * @c: Function argument to be checked
  *
- * Return: 0 for not lowercase, 1 if otherwise
+ * Return: always 0 (Success)
  */
 
 int _islower(int c)
 {
-	int result;
-
 	if (islower(c) == 0)
 	{
-		result = 0;
+		_putchar('0');
 	}
 
 	if (islower(c) == 1)
 	{
-		result = 1;
+		_putchar('1');
 	}
 
-	return (result);
+	return (0);
 }
