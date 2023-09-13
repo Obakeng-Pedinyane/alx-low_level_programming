@@ -15,7 +15,7 @@ int _islower(int c)
 	{
 		_putchar('0');
 	}
-	else
+	if (islower(c) == 1)
 	{
 		_putchar('1');
 	}
