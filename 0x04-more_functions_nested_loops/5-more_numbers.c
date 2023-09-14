@@ -6,7 +6,6 @@
  * Return: On success void.
  * On error, void is returned, and errno is set appropriately.
  */
-
 void more_numbers(void)
 {
 	int i;
