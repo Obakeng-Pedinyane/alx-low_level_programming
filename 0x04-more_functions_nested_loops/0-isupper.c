@@ -11,13 +11,16 @@
 
 int _isupper(int c)
 {
-	if (islower(c) == 0)
+	int val;
+
+	if (isupper(c) == 0)
 	{
-		return (0);
+		val = 0;
 
 	}
-	else
+	if (isupper(c) != 0)
 	{
-		return (1);
+		val = 1;
 	}
+	return (val);
 }
