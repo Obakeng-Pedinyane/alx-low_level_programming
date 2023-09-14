@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * more_numbers - prints 0-14 ten times
+ *
+ * Return: always void Success.
+ */
 void more_numbers(void)
 {
 	int i;
