@@ -1,11 +1,5 @@
 #include "main.h"
 
-/**
- * more_numbers - prints 0-14 ten times to stdout
- *
- * Return: On success void.
- * On error, void is returned, and errno is set appropriately.
- */
 void more_numbers(void)
 {
 	int i;
