@@ -1,14 +1,12 @@
 #include "main.h"
 #include <string.h>
 
-/*
- * *_strcpy - function copies string from one pointer to another
+/**
+ * _strcpy - function parameter destination pointer
+ * @src: function parameter source pointer
  * @dest: funtion parameter destination pointer
  *
- * @src: function parameter source pointer
- *
- * Return: always *dest {Success)
- *
+ * Return: On success always dest
  */
 
 char *_strcpy(char *dest, char *src)
