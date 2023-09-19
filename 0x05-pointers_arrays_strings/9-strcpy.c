@@ -2,8 +2,7 @@
 #include <string.h>
 
 /*
- * _strcpy - function copies one string from one pointer to another
- *
+ * *_strcpy - function copies string from one pointer to another
  * @dest: funtion parameter destination pointer
  *
  * @src: function parameter source pointer
