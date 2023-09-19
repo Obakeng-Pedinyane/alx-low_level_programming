@@ -29,18 +29,13 @@ void print_array(int *a, int n)
 	}
 	if (n <= 0)
 	{
-		int leng;
-		int val;
-
-		leng = sizeof(a);
-		val = leng + n;
 		if (n == 0)
 		{
-			printf("%d\n", a[0]);
+			printf(" ");
 		}
 		else
 		{
-			printf("%d\n", a[val]);
+			printf(" ");
 		}
 	}
 }
