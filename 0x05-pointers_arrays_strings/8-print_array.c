@@ -25,6 +25,6 @@ void print_array(int *a, int n)
 	}
 	if (n < 0)
 	{
-		printf("%d\n", a[n]);
+		printf("%d\n", a[-1]);
 	}
 }
