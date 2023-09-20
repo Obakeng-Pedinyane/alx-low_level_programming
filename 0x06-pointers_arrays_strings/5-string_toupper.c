@@ -5,7 +5,7 @@
 /**
  * string_toupper - function changes all lowercase letters to uppercase
  *
- * @: function parameter
+ * @s: function parameter
  *
  * Return: uppercase version of function argument
  */
