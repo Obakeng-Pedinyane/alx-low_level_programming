@@ -16,7 +16,7 @@ char *cap_string(char *s)
 	cn = 1;
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (isalpha(s[i]) || isdigit(s[i]))
+		if (isalpha(s[i]) || isdigit(s[i]) || s[i] == '-' || s[i] == '_')
 		{
 			if (cn)
 			{
@@ -30,14 +30,7 @@ char *cap_string(char *s)
 		}
 		else
 		{
-			if (s[i] == '{' || s[i] == '}' || s[i] == '(' || s[i] == ')' || s[i] == '"' || s[i] == '?' || s[i] == '!' || s[i] == '.' || s[i] == ';' || s[i] == ',')
-			{
-				cn = 0;
-			}
-			else
-			{
-				cn = 1;
-			}
+			cn = 1;
 		}
 
 	}
