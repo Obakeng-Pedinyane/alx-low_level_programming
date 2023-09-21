@@ -39,5 +39,9 @@ char *cap_string(char *s)
 		}
 
 	}
+	if (s[0] == '\0')
+	{
+		s = s;   
+	}
 	return (s);
 }
