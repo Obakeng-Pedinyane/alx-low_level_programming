@@ -17,7 +17,7 @@ char *cap_string(char *s)
 	cn = 1;
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (isalpha(s[i]) || isdigit(s[i]))
+		if (isalpha(s[i]))
 		{
 			if (cn)
 			{
