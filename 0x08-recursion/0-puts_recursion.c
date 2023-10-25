@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * function - works exactly like the puts function but with recursion
+ * _puts_recursion - function recursively prints a string
  *
  * @s: function parameter
  *
