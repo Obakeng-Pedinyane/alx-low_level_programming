@@ -1,5 +1,7 @@
 #include "main.h"
 
+int findSqrt(int, int);
+
 /**
  * _sqrt_recursion - function finds square root
  *
@@ -7,8 +9,6 @@
  *
  * Return: Always void
  */
-int findSqrt(int, int);
-
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
@@ -21,6 +21,15 @@ int _sqrt_recursion(int n)
 	}
 	return (findSqrt(n, 0));
 }
+/**
+ * findSqrt - function finds square root
+ *
+ * @n: function parameter
+ *
+ * @guess: function parameter
+ *
+ * Return: Always -1,0 or natural square root.
+ */
 
 int findSqrt(int n, int guess)
 {
@@ -32,5 +41,5 @@ int findSqrt(int n, int guess)
 	{
 		return (-1);
 	}
-	return findSqrt(n, guess + 1);
+	return (findSqrt(n, guess + 1));
 }
