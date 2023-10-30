@@ -19,14 +19,18 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	else
+	else if (size > 0)
 	{
 		answer = malloc(sizeof(c) * size);
-		for (i = 0;i < size;i++)
+		for (i = 0; i < size; i++)
 		{
 			answer[i] = c;
 		}
 		return (answer);
+	}
+	else
+	{
+		return(NULL);
 	}
 	free(answer);
 }
