@@ -9,26 +9,16 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *answer;
-	unsigned long int x, y, length, i, j;
-	
+	unsigned long int x = 0, y = 0, length, i, j;
+
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
-	x = 0;
 	while (s1[x] != '\0')
-	{
 		x++;
-	}
-	y = 0;
 	while (s2[y] != '\0')
-	{
 		y++;
-	}
 	length = x + y;
 	answer = malloc((length + 1) * sizeof(char));
 	if (answer == NULL)
@@ -38,9 +28,7 @@ char *str_concat(char *s1, char *s2)
 	else
 	{
 		for (i = 0; i < x; i++)
-		{
 			answer[i] = s1[i];
-		}
 		for (j = 0; j < y; j++)
 		{
 			answer[x] = s2[j];
