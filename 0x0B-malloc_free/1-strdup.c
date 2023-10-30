@@ -14,7 +14,7 @@ char *_strdup(char *str)
 	char *answer;
 	unsigned long int i;
 
-	answer = malloc(sizeof(char *));
+	answer = malloc(sizeof(str));
 	if (answer == NULL)
 	{
 		return (NULL);
@@ -25,7 +25,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		for (i = 0; i < sizeof(char *); i++)
+		for (i = 0; i < sizeof(str); i++)
 		{
 			answer[i] = str[i];
 		}
