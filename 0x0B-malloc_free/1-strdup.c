@@ -13,22 +13,29 @@ char *_strdup(char *str)
 {
 	char *answer;
 	unsigned long int i;
+	unsigned long int l;
 
-	answer = malloc(sizeof(str));
-	if (answer == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
-	else if (str == NULL)
+	l = 0;
+	while (str[l] != '\0')
+	{
+		l++;
+	}
+	answer = malloc((l + 1) * sizeof(char));
+	if (answer == NULL)
 	{
 		return (NULL);
 	}
 	else
 	{
-		for (i = 0; i < sizeof(str); i++)
+		for (i = 0; i < l; i++)
 		{
 			answer[i] = str[i];
 		}
+		answer[l] = '\0';
 		return (answer);
 	}
 }
