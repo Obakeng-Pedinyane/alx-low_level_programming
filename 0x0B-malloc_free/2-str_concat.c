@@ -1,22 +1,17 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
  * str_concat - function connects two strings
- *
  * @s1: function parameter
- *
  * @s2: function parameter
- *
  * Return: Always pointer to s1+s2
  */
-
 char *str_concat(char *s1, char *s2)
 {
 	char *answer;
 	unsigned long int x, y, length, i, j;
 	
-	if (s1 == NULL)
+	if (s1 == NULL || s2 == NULL)
 	{
 		s1 = "";
 	}
@@ -24,11 +19,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-        x = 0;
-        while (s1[x] != '\0')
-        {
-                x++;
-        }
+	x = 0;
+	while (s1[x] != '\0')
+	{
+		x++;
+	}
 	y = 0;
 	while (s2[y] != '\0')
 	{
