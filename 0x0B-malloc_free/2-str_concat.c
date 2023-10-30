@@ -14,16 +14,12 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *answer;
-        unsigned long int x;
-        unsigned long int y;
-	unsigned long int length;
-	unsigned long int i;
-	unsigned long int j;
-
-        if (s1 == NULL)
-        {
-                s1 = "";
-        }
+	unsigned long int x, y, length, i, j;
+	
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
 	if (s2 == NULL)
 	{
 		s2 = "";
