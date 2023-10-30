@@ -21,19 +21,18 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		if ((malloc(sizeof(c) * size)))
+		answer = malloc(size * sizeof(char));
+		if (answer == NULL)
 		{
-			answer = malloc(sizeof(c) * size);
+			return (NULL);
+		}
+		else
+		{
 			for (i = 0; i < size; i++)
 			{
 				answer[i] = c;
 			}
 			return (answer);
 		}
-		else
-		{
-			return (NULL);
-		}
 	}
-	free(answer);
 }
