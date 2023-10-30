@@ -21,7 +21,7 @@ char *create_array(unsigned int size, char c)
 	}
 	else if (size > 0)
 	{
-		answer = malloc(sizeof(c) * size);
+		answer = malloc(sizeof(char) * size);
 		for (i = 0; i < size; i++)
 		{
 			answer[i] = c;
